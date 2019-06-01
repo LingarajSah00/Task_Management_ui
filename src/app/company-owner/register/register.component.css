@@ -1,0 +1,28 @@
+.user{float:left;padding-left: 3px;padding-right: 3px;}
+.user .form-control{margin-bottom: 10px;height: 32px;font-size: 13px;}
+.register-mn h4{font-size: 20px;}
+.register-mn{margin-top: 10px;}
+.sub-btn{    width: 15%;
+    float: right;
+    background-color: #007bff;
+    border: none;
+    color: #fff;padding: 6px;
+    border-radius: 4px;}
+.error {
+        color: red;
+    }
+/* .user span{
+  position: absolute;
+  top: 9px;
+  width: 100%;
+} */
+
+input.ng-invalid.ng-touched {
+    border: .99px solid red;
+}
+.use {
+    padding: 0px;
+}
+.h1 {
+    margin-left: 4px;
+}

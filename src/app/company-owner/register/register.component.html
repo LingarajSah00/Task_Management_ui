@@ -1,0 +1,37 @@
+<div class="register-mn">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="col-sm-12">
+          <h4 class="text-left h1">User Credential :</h4>
+          <div class="col-lg-12 use">
+            <div class="form-group">
+                       <div class=" user col-lg-4">
+                        <input class="form-control" formControlName="username" type="text" name="username" placeholder="User Name" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.username.errors }"  required>
+                        <span *ngIf="submitted && registerForm.controls.username.errors" class="invalid-feedback">
+                              <span *ngIf="registerForm.controls.username.errors.required">*User name is required</span>
+                              <span *ngIf="registerForm.controls.username.errors.minlength">*minimum length should be 4.</span>
+                        </span>
+                      </div>
+                    </div>
+                      <div class="user col-lg-4">
+                        <input class="form-control" type="password" formControlName="password" name="password" placeholder="Password" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.password.errors }"  required>
+                        <span *ngIf="submitted && registerForm.controls.password.errors" class="invalid-feedback">
+                                <span *ngIf="registerForm.controls.password.errors.required">password is required.</span>
+                                <span *ngIf="registerForm.controls.password.errors.minlength">*minimum length should be 4.</span>
+                          </span>
+                      </div>
+                      <div class="user col-lg-4">
+                         <input class="form-control" type="password" formControlName="password" name="repassword" placeholder="Confirm Password"  required>
+                        </div>
+                      <div class="clearfix"></div>
+                    </div>
+                        </div>
+  
+  <div class="col-sm-12">
+      
+             
+  
+      <div class="user col-lg-12"><button type="submit" class="sub-btn">Submit</button></div>
+      <div class="clearfix"></div>
+   </div>	
+      </form>
+  </div>

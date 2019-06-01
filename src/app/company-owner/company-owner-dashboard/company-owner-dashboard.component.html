@@ -1,0 +1,44 @@
+<body>
+<div class="row">
+  <div class="col-lg-5">
+    <div class="span">
+      <img src="../../../assets/images/task1.jpg" class="img" alt="property" >
+    </div>
+  </div>
+  <div class="col-lg-7">
+    <div class="form-holder">
+      <div class="form-content">
+        <div class="form-items">
+          <h3>Welcome to Task Management</h3>
+          <app-alert></app-alert>
+          <ngb-tabset>
+            <ngb-tab >
+              <ng-template ngbTabContent>
+                <br>
+                <ngb-tabset>
+                  <ngb-tab title="Login" id="lgin">
+                    <ng-template ngbTabContent>
+                    <app-login loginType='SUPERADMIN'></app-login>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Register">
+                    <ng-template ngbTabContent>
+                   <app-register></app-register>
+                    </ng-template>
+                  </ngb-tab>
+                </ngb-tabset>
+              </ng-template>
+            </ngb-tab>
+          </ngb-tabset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+</body>
+
+
+

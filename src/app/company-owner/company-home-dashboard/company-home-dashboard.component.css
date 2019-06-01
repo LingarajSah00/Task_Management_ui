@@ -1,0 +1,19 @@
+.hd{
+    width:100%;
+}
+.pimg{
+    hieght:40px;
+    width:68px;
+    border-radius: 50%;
+}
+
+.fc{
+    padding-top: 750px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
